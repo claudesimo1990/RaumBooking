@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app.index');
+})->name('accueil');
+Route::get('/test', function () {
+    return view('app.test');
 });
+Route::get('/profile', function () {
+    return view('users.profile');
+})->name('profile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
