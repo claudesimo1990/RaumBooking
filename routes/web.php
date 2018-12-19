@@ -19,8 +19,8 @@ Route::get('/test', function () {
 });
 Route::get('/profile', function () {
     return view('users.profile');
-})->name('profile');
+})->name('profile')->middleware('verified');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');

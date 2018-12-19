@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <title>RaumReservierung TH KÖLN </title>
-    <link rel="shortcut icon" href="{{ asset('/bilder/IMG_4154.PNG') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/bilder/IMG_4154.PNG') }}">
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
