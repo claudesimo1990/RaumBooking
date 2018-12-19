@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('app.test');
 });
+Route::get('/email', function () {
+    return view('users.emails.email');
+});
 Route::get('/profile', function () {
     return view('users.profile');
 })->name('profile')->middleware('verified');
