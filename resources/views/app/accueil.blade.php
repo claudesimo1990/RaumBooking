@@ -43,7 +43,7 @@
 
     @section('content')
 
-      <h1 class="my-4"> Willkommen an der TH KÖLN </h1>
+      <h3 class="my-4"> Willkommen an der TH KÖLN </h3>
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
