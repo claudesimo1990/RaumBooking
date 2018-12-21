@@ -8,13 +8,14 @@
     <meta name="author" content="">
 
     <title>RaumReservierung TH KÖLN </title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/bilder/IMG_4154.PNG') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{{asset('/bilder/IMG_4154.PNG')}}}">
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/modern-business.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     @yield('css')
 
@@ -32,7 +33,7 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container logreg">
 
       @yield('content')
 
@@ -42,7 +43,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; RaumReservierung TH KÖLN 2019</p>
       </div>
       <!-- /.container -->
     </footer>

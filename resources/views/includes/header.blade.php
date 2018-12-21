@@ -9,12 +9,12 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('{{ asset('bilder/IMG_4143.JPG') }}')">
             <div class="carousel-caption d-none d-md-block">
-              <h3></h3>
+             <h3></h3>
               <p></p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('{{ asset('bilder/IMG_4151.JPG') }}')">
+          <div class="carousel-item" style="background-image: url('{{ asset('bilder/IMG_4142.JPG') }}')">
             <div class="carousel-caption d-none d-md-block">
               <h3></h3>
               <p></p>

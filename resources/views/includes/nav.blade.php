@@ -12,47 +12,61 @@
       <ul class="navbar-nav ml-auto">
             @if (Auth::guest())
             <li class="nav-item">
-                <a class="nav-link" href="{!! route('login') !!}">login</a>
+                <a class="nav-link" href="{!! route('login') !!}">
+                  <i class="fa fa-sign-in"></i>
+                login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{!! route('register') !!}">register</a>
+                <a class="nav-link" href="{!! route('register') !!}">
+                  <i class="fa fa-sign-in"></i>
+                register</a>
               </li>
             @else
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Home</a>
+              <a class="nav-link" href="#">
+                <i class="fa fa-edit"></i>
+              Reservieren</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Reservierung</a>
+              <a class="nav-link" href="#"><i class="fa fa-address-book"></i>Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link" href="{!! route('accueil') !!}">Forum</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                  {{ Auth::user()->name }} <span class="caret"></span>
-                  </a>
+              <li class="nav-item dropdown">
+                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  <i class="fa fa-user-o"></i>
+                {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
 
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-bell-o"></i>
+                        Notifications            
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-edit"></i>
+                        Reservierungen            
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-comments-o"></i>
+                        Forum            
+                    </a>
                     <a class="dropdown-item" href="{{ route('profile') }}">
-                          profile            
-                      </a>
+                    <i class="fa fa-user-o"></i>
+                        Profile            
+                    </a>
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                                     <i class="fa fa-sign-out"></i>
+                                    {{ __('Abmelden') }}
+                    </a>
 
-                      <a class="dropdown-item" href="{{ route('logout') }}"
-                         onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
-                                      {{ __('Abmelden') }}
-                      </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
 
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          @csrf
-
-                      </form>
-                  </div>
-              </li>
+                    </form>
+                </div>
+            </li>
             @endif
           </ul>
     </div>

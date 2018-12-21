@@ -1,13 +1,15 @@
 @extends('layouts.master2')
 
-
+@section('css')
+<link rel="stylesheet" href="{{asset('css/user/forgot.css')}}">
+@stop
 
 @section('nav')
 
 @include('includes.nav')
 
 @stop
-<br><br><br><br><br><br>
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -29,5 +31,4 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection

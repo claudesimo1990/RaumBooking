@@ -1,7 +1,7 @@
 @extends('layouts.master2')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('user/profile.css') }}">
+<link rel="stylesheet" href="{{ asset('css/user/profile.css') }}">
 @stop
 
 @section('nav')
@@ -11,7 +11,7 @@
 @stop
 
 @section('content')
-<br><br><br>
+
 <div class="row justify-content-center emp-profile">
             <form method="post">
                 <div class="row">
