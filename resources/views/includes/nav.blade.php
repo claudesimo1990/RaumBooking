@@ -23,12 +23,12 @@
               </li>
             @else
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{route('posts.index')}}">
                 <i class="fa fa-edit"></i>
               Reservieren</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-address-book"></i>Contact</a>
+              <a class="nav-link" href="{{route('contact')}}"><i class="fa fa-address-book"></i>Contact</a>
             </li>
               <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -40,6 +40,7 @@
 
                     <a class="dropdown-item" href="#">
                       <i class="fa fa-bell-o"></i>
+                      <span class="badge badge-danger">9+</span>
                         Notifications            
                     </a>
                     <a class="dropdown-item" href="#">

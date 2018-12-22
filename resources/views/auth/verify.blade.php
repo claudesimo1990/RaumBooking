@@ -1,7 +1,7 @@
 @extends('layouts.master2')
 
 @section('css')
-<link rel="stylesheet" href="{{asset('css/user/forgot.css')}}">
+<link rel="stylesheet" href="{{asset('css/user/email.css')}}">
 @stop
 
 @section('nav')
