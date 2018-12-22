@@ -8,7 +8,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 route::get('/posts','PostController@index')->name('posts.index');
 
 //einzelne Raum
-route::get('/posts{id}','PostController@show')->name('posts.show');
+route::get('/post{id}','PostController@show')->name('posts.show');
 
 //profile
 route::get('/profile','ProfilController@index')->name('profile')->middleware('verified');
